@@ -1,0 +1,85 @@
+.columns {
+    margin-bottom: 40px;
+}
+@media (min-width: 760px){
+    .columns {
+        margin-bottom: 60px;
+    }
+}
+@media (min-width: 1148px){
+    .columns {
+        display: flex;
+    }
+}
+@media (min-width: 1148px){
+    .mainColumn {
+        flex-grow: 1;
+        min-width: 0;
+        width: 0;
+    }
+}
+.moduleWrapper {
+    margin: 0 20px 40px;
+}
+@media (min-width: 760px){ 
+    .moduleWrapper {
+        margin: 0 0 40px;
+    }
+}
+.galleryContainer {
+    font-family: Larsseit,Arial,sans-serif;
+}
+.headingRow {
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.headingTitleContainer {
+    align-items: center;
+    display: inline-flex;
+}
+.heading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    float: left;
+    margin: 0;
+}
+.link_default {
+    text-decoration: none;
+    color: #2681db;
+    font-weight: 700;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.seeAllLink{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration: none;
+    color: #2681db;
+    float: right;
+    position: relative;
+    top: 3px;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.yourAdHereLink{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #6f727f;
+    display: none;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    text-decoration: none;
+    top: 3px;
+}
+@media (min-width: 510px){ 
+    .yourAdHereLink {
+        display: block;
+    }
+}
+

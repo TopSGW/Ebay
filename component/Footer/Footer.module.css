@@ -1,0 +1,238 @@
+
+.container {
+    background-color: #3e4153;
+    font-family: Larsseit,Arial,sans-serif;
+    margin-top: auto;
+}
+.srOnly {
+    border-width: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.linkContainer {
+    padding-left: 20px;
+    padding-top: 40px;
+}
+@media (min-width: 414px){
+    .linkContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 760px){
+    .linkContainer {
+        padding-left: 40px;
+        padding-top: 60px;
+        width: 64%;
+    }
+}
+@media (min-width: 980px){
+    .linkContainer {
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 88px 0 0;
+        width: 980px;
+    }
+}
+
+.column {
+    margin-top: 56px;
+}
+@media (min-width: 414px){
+    .column {
+        flex-basis: 50%;
+        margin: 0;
+        min-width: 50%;
+        padding-bottom: 60px;
+    }
+}
+@media (min-width: 760px){
+    .column {
+        flex-basis: auto;
+    }
+}
+@media (min-width: 980px){
+    .column {
+        margin: 0 auto;
+        min-width: 0;
+    }
+}
+.column:first-child {
+    margin-top: 0;
+}
+
+.columnTitle {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #c5c6cb;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.columnList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.columnItem {
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+}
+.columnItem:first-child {
+    margin-top: 25px;
+}
+
+
+.link_greyGreen {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.columnLink {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    float: none;
+    font-family: Larsseit,Arial,sans-serif;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+.badgeContainer{
+    margin-top: 60px;
+}
+@media (min-width: 414px){
+    .badgeContainer {
+        margin: 0;
+    }
+}
+@media (min-width: 760px){
+    .badgeContainer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+.storeIcons {
+    display: flex;
+    justify-content: center;
+    margin: 0 25px;
+}
+@media (min-width: 760px){
+    .storeIcons {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+}
+
+.socialMediaIcons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto 0;
+    width: 180px;
+}
+@media (min-width: 414px){
+    .socialMediaIcons {
+        width: auto;
+    }
+}
+@media (min-width: 760px){
+    .socialMediaIcons {
+        margin: 0 0 0 50px;
+    }
+}
+.link_default {
+    text-decoration: none;
+    color: #2681db;
+    font-weight: 700;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.container_f {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.icon {
+    display: inline-block;
+    overflow: hidden;
+    pointer-events: none;
+    vertical-align: middle;
+}
+
+.appStore {
+    height: 45px;
+    width: 135px;
+}
+
+.socialMediaIconContainer {
+    border-radius: 25px;
+    align-items: center;
+    background-color: #6f727f;
+    display: inline-block;
+    height: 50px;
+    justify-content: center;
+    margin-left: 15px;
+    position: relative;
+    width: 50px;
+}
+.socialMediaIconContainer:first-child {
+    margin-left: 0;
+}
+.facebookIcon {
+    color: #fff;
+    height: 20px;
+    margin-left: -5px;
+    margin-top: -10px;
+    width: 10px;
+}
+.face_book {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.copyright {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #c5c6cb;
+    margin: 60px 40px 0;
+    padding-bottom: 60px;
+    text-align: center;
+}
+@media (min-width: 414px){
+    .copyright {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 760px){
+    .copyright {
+        margin: 60px 0 0;
+    }
+}
+@media (min-width: 760px){
+    .copyrightText {
+        margin: 0;
+    }
+}
+
+

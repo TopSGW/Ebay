@@ -1,0 +1,212 @@
+.listContainer{
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 20px;
+}
+@media (min-width: 980px){
+    .listContainer {
+        border-right: 1px solid #ececee;
+        flex-basis: 350px;
+        max-width: 350px;
+        min-width: 320px;
+        padding: 0 10px 0 20px;
+    }
+}
+@media (min-width: 980px){
+    .listContainer_isSubMenu {
+        background-color: hsla(0,0%,100%,.9);
+        border-right: none;
+        box-shadow: inset 0 2px 5px -2px rgb(0 0 0 / 10%);
+        flex: 1;
+        flex-basis: 0;
+        height: 100%;
+        max-width: none;
+        overflow-y: hidden;
+        padding: 0;
+    }
+}
+@media (min-width: 1120px){
+    .listContainer_isSubMenu {
+        background-color: unset;
+        box-shadow: none;
+    }
+}
+@media (min-width: 1120px){
+    .listContainer_twoOrMoreColumns {
+        background-color: hsla(0,0%,100%,.9);
+        box-shadow: inset 0 2px 5px -2px rgb(0 0 0 / 10%);
+    }
+}
+.categoryName {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #373373;
+    margin: 32px 0 10px;
+}
+.categoryName_isSubMenu {
+    margin-top: 28px;
+}
+@media (min-width: 980px){
+    .categoryName {
+        display: none;
+    }
+}
+.categoryList {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 15px;
+}
+@media (min-width: 980px){
+    .categoryList {
+        padding: 15px 0;
+    }
+}
+@media (min-width: 980px){
+    .categoryList_isSubMenu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+        padding-right: 30%;
+    }
+}
+.categoryItem {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    border-bottom: 1px solid #ececee;
+    box-sizing: border-box;
+    margin-bottom: -1px;
+}
+@media (min-width: 980px){
+    .categoryItem {
+        margin: 0 20px -1px;
+    }
+}
+@media (min-width: 980px){ 
+    .categoryItem_isSubMenu {
+        margin: 0 0 -1px;
+        padding: 0 20px;
+    }
+}
+.categoryItem:first-child, .categoryItem:last-child, .categoryItem_isSubMenu {
+    border-bottom: none;
+}
+@media (min-width: 980px){
+    .categoryItem:first-child {
+        border-bottom: 1px solid #ececee;
+    }
+}
+@media (min-width: 980px){
+    .categoryItem_isSubMenu:first-child {
+        border-bottom: none;
+    }
+}
+
+/* ///////////////////////////////////////////*/
+.button_en {
+    border-radius: 4px;
+    background: none;
+    border: 1px solid hsla(0,0%,100%,0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    flex: auto;
+    font-family: Larsseit,Arial,sans-serif;
+    font-weight: 700;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+.button_medium {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 14px 30px;
+}
+.menuLink {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    border: none;
+    box-sizing: border-box;
+    color: #3e4153;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+}
+@media (min-width: 980px){
+    .menuLink {
+        padding: 8px 0;
+    }
+}
+@media (min-width: 980px){
+    .menuLink_isSubMenu {
+        padding: 4px 0;
+    }
+}
+@media (min-width: 980px){
+    .menuLink_twoOrMoreColumns {
+        max-width: 225px;
+    }
+}
+@media (min-width: 1120px){
+    .menuLink_twoOrMoreColumns {
+        max-width: 300px;
+    }
+}
+.menuLink_isSubMenu:focus, .menuLink_isSubMenu:hover {
+    color: #2681db;
+    text-decoration: underline;
+}
+.childName {
+    margin-right: 10px;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.backButtonBar{
+    background-color: #f3f3f9;
+    height: 60px;
+    width: 100%;
+}
+.button {
+    border-radius: 4px;
+    background: none;
+    border: 1px solid hsla(0,0%,100%,0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    flex: auto;
+    font-family: Larsseit,Arial,sans-serif;
+    font-weight: 700;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+
+.backButton {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    align-items: center;
+    color: #373373;
+    display: flex;
+    padding: 15px;
+}

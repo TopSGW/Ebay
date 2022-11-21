@@ -1,0 +1,137 @@
+@media (min-width: 760px){
+    .sidebar {
+        display: flex;
+        margin-bottom: -60px;
+    }
+}
+
+@media (min-width: 1148px){
+    .sidebar {
+        display: block;
+        flex: 0 0 300px;
+        margin-bottom: 0;
+        margin-left: 40px;
+        padding-top: 42px;
+        position: relative;
+        width: 300px;
+    }
+}
+
+.adChoices {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: Arial;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.link_alternate {
+    text-decoration: none;
+    color: #3e4153;
+    font-weight: 700;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.icon {
+    margin-left: 2px;
+}
+
+.moduleWrapper {
+    margin: 0 20px 40px;
+}
+
+@media (min-width: 760px){
+    .moduleWrapper {
+        margin: 0 0 40px;
+    }
+}
+
+.popularLinks {
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    padding: 25px;
+}
+
+@media (min-width: 760px){
+    .popularLinks {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 1148px){
+    .bigbox div[data-google-query-id], .popularLinks {
+        margin-bottom: 20px;
+    }
+}
+
+.container {
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    float: left;
+    margin: 0;
+}
+
+.headerTitle {
+    float: none;
+}
+
+@media (min-width: 980px){
+    .headerTitle {
+        float: left;
+    }
+}
+.container:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.link_default {
+    text-decoration: none;
+    color: #2681db;
+    font-weight: 700;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+}
+.popularLink_en {
+    text-decoration: none;
+    color: #2681db;
+    font-weight: 700;
+    border-bottom: 1px solid #ececee;
+    display: block;
+    height: 43px;
+    line-height: 43px;
+    position: relative;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+
+.icon_en {
+    display: inline-block;
+    overflow: hidden;
+    pointer-events: none;
+    vertical-align: middle;
+}
+.chevron {
+    margin-top: 2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

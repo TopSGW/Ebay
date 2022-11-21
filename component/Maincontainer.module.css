@@ -1,0 +1,27 @@
+
+.page{
+    color: #3e4153;
+    font-family: Larsseit,Arial,sans-serif;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+@media (min-width: 760px){
+    .page {
+        margin-bottom: 80px;
+        margin-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (min-width: 1330px){
+    .page {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        width: 1250px;
+    }
+}
+.homepage {
+    margin-top: 0;
+}
