@@ -150,10 +150,10 @@ export default function Footer()
                 </div>
                 <div className={style.socialMediaIcons}>
                     <div>
-                        <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
+                        {/* <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
                             <FacebookOutlinedIcon className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
                                 fontSize="medium"/>
-                        </a>
+                        </a> */}
                     </div>
 
                 </div>  

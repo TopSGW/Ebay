@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { PayloadAction } from "@reduxjs/toolkit";
+import { toUSVString } from "util";
 
 export interface menuState{
     is_Selected:boolean[],
@@ -26,10 +27,14 @@ export const menuSlice = createSlice({
             }
             state.is_Selected[action.payload] = true;
             state.currentState = true; 
+        },
+        handleRemove:(state, action: PayloadAction<number>) =>{
+            state.is_Selected[action.payload] = false;
+            state.currentState = true;
         }
     }
 })
 
-export const {handle_Out, handle_Select} = menuSlice.actions
+export const {handle_Out, handle_Select , handleRemove} = menuSlice.actions
 
 export default menuSlice.reducer

@@ -4,12 +4,13 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import {useSelector, useDispatch} from "react-redux";
 import { findCategory ,findFinish} from "../../features/category/category";
 import type { RootState } from "../../store";
-import { handle_Out, handle_Select } from "../../features/menu/menu";
+import { handleRemove, handle_Out, handle_Select } from "../../features/menu/menu";
 import EmenusList from "./EmenusList";
 import Box from '@mui/material/Box';
 import Modal from "@mui/material/Modal";
 import Emodal_menu from "./Emodal_menu";
 import CloseIcon from '@mui/icons-material/Close';
+import ShowChartIcon from '@mui/icons-material/ShowChart';
 
 export default function Enavigation(){
     const matches_ItemState = useMediaQuery('(min-width:980px)');
@@ -27,6 +28,11 @@ export default function Enavigation(){
             dispatch(handle_Select(id));
             dispatch(findFinish());    
         }
+    }
+    const [moreActiveMenu ,setmoreActiveMenu] = useState(false);
+    const handlemoreMenu=()=>{
+        dispatch(handleRemove(5));
+        setmoreActiveMenu(true);
     }
     useEffect(()=>{
         if(matches_ItemState){
@@ -108,6 +114,26 @@ export default function Enavigation(){
                             <div className={styles.nameL1}>Vacation Rentals</div>
                         </a>
                     </li>
+                    <li className={`${styles.menuItemL1} ${styles.menuItemL1_en} ${styles.menuItemL1More}`} 
+                            onMouseOver={()=>handlemoreMenu()} onMouseLeave={()=>setmoreActiveMenu(false)} 
+                            role="none">
+                        <a className={`${styles.menuLinkL1} ${styles.menuLinkL1More}`} role="menuitem">
+                            <ShowChartIcon className={styles.icon7}/>
+                        </a>
+                        <div className={`${styles.moreMenu} ${moreActiveMenu ? styles.moreMenuActive : ''}`}>
+                            <ul className={styles.moreMenuList}>
+                                <li className={`${styles.moreMenuItem} ${styles.moreMenuItem_en}`}>
+                                    <a className={`${styles.link_default} ${styles.moreMenuLink}`}>Pets</a>
+                                </li>
+                                <li className={`${styles.moreMenuItem} ${styles.moreMenuItem_en}`}>
+                                    <a className={`${styles.link_default} ${styles.moreMenuLink}`}>Community</a>
+                                </li>
+                                <li className={`${styles.moreMenuItem} ${styles.moreMenuItem_en}`}>
+                                    <a className={`${styles.link_default} ${styles.moreMenuLink}`}>Vacation Rentals</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
                 {matches_ItemState ? <EmenusList/> : 
                     <Modal
@@ -154,3 +180,4 @@ const style = {
     boxShadow: 24,  
     width: 100 + "%"
   };
+
