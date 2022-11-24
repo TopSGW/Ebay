@@ -127,7 +127,7 @@ export default function Footer()
                             <AddToDriveIcon className={`${style.icon} ${style.appStore}`}/>
                         </div>
                     </a>
-                    <a className={style.link_default}>
+                    {/* <a className={style.link_default}>
                         <div className={style.container_f}>
                             <FacebookOutlinedIcon className={`${style.icon} ${style.appStore}`}/>
                         </div>
@@ -146,14 +146,26 @@ export default function Footer()
                         <div className={style.container_f}>
                             <YouTubeIcon className={`${style.icon} ${style.appStore}`}/>
                         </div>
-                    </a>                       
+                    </a>                        */}
                 </div>
                 <div className={style.socialMediaIcons}>
                     <div>
-                        {/* <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
-                            <FacebookOutlinedIcon className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
+                        <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
+                            <FacebookOutlinedIcon style={{width:'50px',height:'50px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
+                                fontSize="large"/>
+                        </a>
+                        <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
+                            <InstagramIcon style={{width:'50px',height:'50px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
                                 fontSize="medium"/>
-                        </a> */}
+                        </a>
+                        <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
+                            <TwitterIcon style={{width:'50px',height:'50px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
+                                fontSize="medium"/>
+                        </a>
+                        <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
+                            <YouTubeIcon style={{width:'50px',height:'50px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
+                                fontSize="medium"/>
+                        </a>
                     </div>
 
                 </div>  

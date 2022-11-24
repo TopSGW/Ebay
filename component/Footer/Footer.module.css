@@ -183,15 +183,15 @@
 }
 
 .socialMediaIconContainer {
-    border-radius: 25px;
+    border-radius: 30px;
     align-items: center;
     background-color: #6f727f;
     display: inline-block;
-    height: 50px;
+    height: 60px;
     justify-content: center;
     margin-left: 15px;
     position: relative;
-    width: 50px;
+    width: 60px;
 }
 .socialMediaIconContainer:first-child {
     margin-left: 0;
@@ -199,8 +199,8 @@
 .facebookIcon {
     color: #fff;
     height: 20px;
-    margin-left: -5px;
-    margin-top: -10px;
+    margin-left: -25px;
+    margin-top: -25px;
     width: 10px;
 }
 .face_book {
