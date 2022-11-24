@@ -74,7 +74,7 @@ export default function EpopularBuySell(){
             </section>
             <section className={`${style1.moduleWrapper} ${style.signInMarketing}`}>
                 <h2 className={style.signInMarketingHeading}>
-                    Kijiji’s better when you’re a member
+                    Mainmarket’s better when you’re a member
                 </h2>
                 <p className={style.signInMarketingBody}>
                     See more relevant listings, find what you’re looking for quicker, and more!
@@ -142,7 +142,7 @@ export default function EpopularBuySell(){
             <section className={style1.moduleWrapper}>
                 <div className={style1.container}>
                     <h2 className={`${style1.title} ${style1.headerTitle}`}>
-                        <span className={style1.hiddenOnMobile}>Kijiji Central </span>
+                        <span className={style1.hiddenOnMobile}>Mainmarket Central </span>
                     </h2>
                 </div>
                 <div className={style.container}>

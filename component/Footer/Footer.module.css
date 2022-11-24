@@ -1,6 +1,6 @@
 
 .container {
-    background-color: #004c6c;
+    background-color: #eaab00 ;
     font-family: Larsseit,Arial,sans-serif;
     margin-top: auto;
 }
@@ -183,15 +183,15 @@
 }
 
 .socialMediaIconContainer {
-    border-radius: 30px;
+    border-radius: 25px;
     align-items: center;
     background-color: #6f727f;
     display: inline-block;
-    height: 60px;
+    height: 50px;
     justify-content: center;
     margin-left: 15px;
     position: relative;
-    width: 60px;
+    width: 50px;
 }
 .socialMediaIconContainer:first-child {
     margin-left: 0;
@@ -199,8 +199,8 @@
 .facebookIcon {
     color: #fff;
     height: 20px;
-    margin-left: -25px;
-    margin-top: -25px;
+    margin-left: -20px;
+    margin-top: -20px;
     width: 10px;
 }
 .face_book {

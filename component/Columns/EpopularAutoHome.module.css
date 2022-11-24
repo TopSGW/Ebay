@@ -215,8 +215,8 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 20px;
-    background-color: rgba(55,51,115,.75);
-    color: #fff;
+    background-color:  hsla(0,0%,100%,.9);
+    color: #333;
     display: inline-block;
     margin: 0;
     padding: 5px;
@@ -233,7 +233,7 @@
     }
 }
 .container_fullBleed:focus .cardTitle, .container_fullBleed:hover .cardTitle {
-    background-color: hsla(0,0%,100%,.9);
+    background-color: rgba(245, 229, 4, 0.9);
     color: #373373;
 }
 

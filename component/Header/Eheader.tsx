@@ -62,7 +62,8 @@ export default function Eheader () {
                 <div className={styles.logoWrapper}>
                     <div className={styles.logo} style={{visibility:'visible'}}>
                         <a className={styles.logoLink} href="">
-                            <Face2Icon className={`${styles.icon} ${styles.logoLinkIcon}`}/>
+                            {/* <Face2Icon className={`${styles.icon} ${styles.logoLinkIcon}`}/> */}
+                            <span style={{color: '#23527c', fontWeight:'700'}}>MAINMARKET</span>
                         </a>
                     </div>
                 </div>

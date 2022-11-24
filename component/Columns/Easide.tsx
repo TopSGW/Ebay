@@ -15,7 +15,7 @@ export default function Easide(){
                 <a className={`${style.link_default} ${style.popularLink_en}`}>
                     Free Stuff
                     <ArrowRightIcon className={`${style.icon_en} ${style.chevron}`} 
-                       color="primary" fontSize="large"/>
+                       color="info" fontSize="large"/>
                 </a>
                 <a className={`${style.link_default} ${style.popularLink_en}`}>
                     Wanted Ads

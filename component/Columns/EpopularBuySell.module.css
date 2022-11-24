@@ -185,7 +185,7 @@
 
 .signInMarketing {
     border-radius: 4px;
-    background-color: #eaab00;
+    background-color: #ffdd36;
     color: #fff;
     padding: 30px;
     text-align: center;
@@ -219,9 +219,9 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    background-color: #004c6c;
+    background-color: #fff;
     border: 1px solid #fff;
-    color: #fff;
+    color: #333;
     display: inline-block;
     padding: 15px 35px;
     text-decoration: none;

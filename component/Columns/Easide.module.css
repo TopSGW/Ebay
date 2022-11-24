@@ -50,7 +50,7 @@
 
 .popularLinks {
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
     padding: 25px;
 }
@@ -99,15 +99,16 @@
 
 .link_default {
     text-decoration: none;
-    color: #2681db;
+    color: #ffdd36;
     font-weight: 700;
     -webkit-transition: color .2s linear;
     -moz-transition: color .2s linear;
     transition: color .2s linear;
 }
 .popularLink_en {
+    cursor: pointer;
     text-decoration: none;
-    color: #2681db;
+    color: #333;
     font-weight: 700;
     border-bottom: 1px solid #ececee;
     display: block;
@@ -118,7 +119,9 @@
     -moz-transition: color .2s linear;
     transition: color .2s linear;
 }
-
+.popularLink_en:hover{
+    background-color: floralwhite;
+}
 
 .icon_en {
     display: inline-block;
@@ -134,4 +137,5 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    color: #ffdd36;
 }

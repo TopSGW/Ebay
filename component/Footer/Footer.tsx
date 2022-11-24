@@ -13,7 +13,7 @@ export default function Footer()
             <div className={style.linkContainer}>
                 <div className={style.column}>
                     <h3 className={style.columnTitle}>
-                        Kijiji
+                        Mainmarket
                     </h3>
                     <ul className={style.columnList}>
                         <li className={style.columnItem}>
@@ -33,7 +33,7 @@ export default function Footer()
                         </li>
                         <li className={style.columnItem}>
                             <a className={`${style.link_greyGreen} ${style.columnLink}`}>
-                                Advertise on Kijiji
+                                Advertise on Mainmarket
                             </a>
                         </li>
                     </ul>
@@ -45,12 +45,12 @@ export default function Footer()
                         <ul className={style.columnList}>
                             <li className={style.columnItem}>
                                 <a className={`${style.link_greyGreen} ${style.columnLink}`}>
-                                    Kijiji Autos
+                                    Mainmarket Autos
                                 </a>
                             </li>
                             <li className={style.columnItem}>
                                 <a className={`${style.link_greyGreen} ${style.columnLink}`}>
-                                    Kijiji Central
+                                    Mainmarket Central
                                 </a>
                             </li>
                             <li className={style.columnItem}>
@@ -99,7 +99,7 @@ export default function Footer()
                             </li>
                             <li className={style.columnItem}>
                                 <a className={`${style.link_greyGreen} ${style.columnLink}`}>
-                                    Kijiji en frencais
+                                    Mainmarket en frencais
                                 </a>
                             </li>
                             <li className={style.columnItem}>
@@ -151,19 +151,19 @@ export default function Footer()
                 <div className={style.socialMediaIcons}>
                     <div>
                         <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
-                            <FacebookOutlinedIcon style={{width:'50px',height:'50px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
+                            <FacebookOutlinedIcon style={{width:'40px',height:'40px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
                                 fontSize="large"/>
                         </a>
                         <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
-                            <InstagramIcon style={{width:'50px',height:'50px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
+                            <InstagramIcon style={{width:'40px',height:'40px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
                                 fontSize="medium"/>
                         </a>
                         <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
-                            <TwitterIcon style={{width:'50px',height:'50px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
+                            <TwitterIcon style={{width:'40px',height:'40px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
                                 fontSize="medium"/>
                         </a>
                         <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
-                            <YouTubeIcon style={{width:'50px',height:'50px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
+                            <YouTubeIcon style={{width:'40px',height:'40px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
                                 fontSize="medium"/>
                         </a>
                     </div>
