@@ -1,12 +1,12 @@
 import Image from "next/image"
 import style from "./EpopularAutoHome.module.css"
-import Img1 from "./img/1.jpg";
+import Img1 from "./img/1.jpeg";
 import Img2 from "./img/2.jpg";
 import Img3 from "./img/3.jpg";
-import Img4 from "./img/4.jpg";
+import Img4 from "./img/4.jpeg";
 import Img5 from "./img/5.jpg";
-import Img6 from "./img/6.jpg";
-import Img7 from "./img/7.jpg";
+import Img6 from "./img/6.jpeg";
+import Img7 from "./img/7.jpeg";
 import Img8 from "./img/8.jpg";
 export default function EpopularAutoHom(){
     return(

@@ -3,8 +3,10 @@ import MyImage from "./MyImage";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import { useState } from "react";
+import useMediaQuery from '@mui/material/useMediaQuery';
 export default function EcardSlider()
 {
+    const matches_phones = useMediaQuery('(min-width:761px)');
     const [arrowState, SetarrowState] = useState(0);
     const arrowRight = () =>{
         SetarrowState(arrowState - 100);
@@ -15,7 +17,7 @@ export default function EcardSlider()
     }
     return(
         <div className={style.container}>
-            {arrowState < 0 ? 
+            {arrowState < 0 && matches_phones ? 
             <div className={`${style.arrowLeftContainer}`} onClick= {arrowLeft}>
                 <button className={style.arrowButton}></button>
                 <NavigateBeforeIcon className={`${style.icon} ${style.arrowIcon}`} style={{height:"100%", width:"100%"}}/>
@@ -53,7 +55,7 @@ export default function EcardSlider()
                     <MyImage img_src='/27.jpeg'/>
                 </div>
             </div>
-            {arrowState > -201 ?
+            {arrowState > -201 && matches_phones ?
             <div className={style.arrowRightContainer} onClick={arrowRight}>
                 <button className={style.arrowButton}></button>
                 <NavigateNextIcon className={`${style.icon} ${style.arrowIcon}`} style={{height:"100%", width:"100%"}}/>

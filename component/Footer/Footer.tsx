@@ -162,12 +162,7 @@ export default function Footer()
                             <TwitterIcon style={{width:'40px',height:'40px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
                                 fontSize="medium"/>
                         </a>
-                        <a className={`${style.link_default} ${style.socialMediaIconContainer}`}>
-                            <YouTubeIcon style={{width:'40px',height:'40px'}} className={`${style.icon} ${style.facebookIcon} ${style.face_book}`} 
-                                fontSize="medium"/>
-                        </a>
                     </div>
-
                 </div>  
             </div>
             <div className={style.copyright}>
