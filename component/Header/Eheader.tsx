@@ -14,12 +14,14 @@ import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutl
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import GroupWorkIcon from '@mui/icons-material/GroupWork';
 import { useState , useEffect } from "react";
+import "@fontsource/dancing-script";
 import { style } from "@mui/system";
 
 export default function Eheader () {
     const [cateState , SetcateState] = useState(false);
     const [categoryName , SetcategoryName] = useState('All Categories');
     const [SelectedIcon, SetSelectedIcon] = useState(<></>);
+    const [searchState, SetsearchState] = useState(false);
     const handleActive = () =>{
         SetcateState((cateState) => !cateState)
     }
@@ -63,7 +65,7 @@ export default function Eheader () {
                     <div className={styles.logo} style={{visibility:'visible'}}>
                         <a className={styles.logoLink} href="">
                             {/* <Face2Icon className={`${styles.icon} ${styles.logoLinkIcon}`}/> */}
-                            <span style={{color: '#23527c', fontWeight:'700'}}>MAINMARKET</span>
+                            <span style={{color: '#23527c', fontWeight:'700', fontFamily:'Dancing Script',fontSize:'27px'}}>MAINMARKET</span>
                         </a>
                     </div>
                 </div>
@@ -77,7 +79,8 @@ export default function Eheader () {
                                             <SearchIcon className={`${styles.icon} ${styles.icon_search} ${styles.inputIcon}`}/>
                                         </span>
                                         <input className={`${styles.input} ${styles.inputWithIcon} ${styles.inputKeyword1}`}
-                                            placeholder="What are you looking for?"></input>
+                                            placeholder="What are you looking for?" 
+                                            onFocus={()=>SetsearchState(true)}></input>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +141,7 @@ export default function Eheader () {
                             </div>
                             <span className={styles.text}>Canada</span>
                         </button>
-                        <button className={`${styles.searchSubmit} ${styles.button_sn} ${styles.button_futureSecondary} ${styles.button_medium}`}>
+                        <button className={`${styles.searchSubmit} ${searchState ? styles.searchSubmit_on : ''} ${styles.button_sn} ${styles.button_futureSecondary} ${styles.button_medium}`}>
                             Search
                         </button>
                     </div>

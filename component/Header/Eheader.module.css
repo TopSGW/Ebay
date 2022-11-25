@@ -597,6 +597,12 @@
     top: 0;
     width: 48px;
 }
+.searchSubmit_on {
+    display: block;
+    margin: 16px auto 0;
+    position: static;
+    width: 100%;
+}
 @media (min-width: 650px){
     .searchSubmit {
         display: block;
